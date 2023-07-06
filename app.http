@@ -1,0 +1,24 @@
+###Normal Initialization
+GET http://localhost:3000/
+
+###API 1
+GET http://localhost:3000/todos/?status=TO%20DO
+
+###API 2
+GET http://localhost:3000/todos/4/
+
+###API 3
+GET http://localhost:3000/agenda/?date=2021-1-12
+
+###API 4
+POST http://localhost:3000/todos/ 
+Content-Type: application/json
+
+{
+  "id": 6,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO",
+  "category": "HOME",
+  "dueDate": "2021-02-22"
+}
